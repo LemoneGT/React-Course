@@ -1,6 +1,6 @@
 // use this to importe values from your file
 // fist value is a default export and the second {} is to refere individual export
-import heroes, {owners} from "./data/heroes"
+import heroes, {owners} from "../data/heroes"
 
 console.log(owners)
 

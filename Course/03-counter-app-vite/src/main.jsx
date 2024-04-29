@@ -2,6 +2,7 @@ import React from 'react'
 import ReactDOM from 'react-dom/client';
 // import {HelloWorldApp} from './HelloWorldApp';
 import { FirstApp } from './FirstApp';
+import { CounterApp } from './CounterApp';
 
 // import HelloWOrldApp from './HelloWorldApp'
 
@@ -29,6 +30,6 @@ ReactDOM.createRoot( document.getElementById('root') ).render(
     <React.StrictMode>
         {/* if you want to aggregate properties, you need to do this */}
         {/* add {} to aggregate int in your properties */}
-        <FirstApp />
+        <CounterApp value={10}/>
     </React.StrictMode>
 )

@@ -12,10 +12,23 @@ import { Fragment } from 'react';
 // }
 
 // if you dont write nothing in EventTarget, is the same to fragment
+const newMessage = {
+    message: 'Hola marciano',
+    status: true,
+};
+
+const getMessage = ( message ) =>{
+    return message;
+}
+
 export const FirstApp = () => {
+    
+
     return(
         <>
-            <h1>Soy un tiburon</h1>
+            <h1>{ getMessage('Esto se autodestruira') }</h1>
+            {/* if you need to send or you need the object convert in this json.stringify */}
+            {/* <code>{ JSON.stringify(newMessage) }</code> */}
             <p>Subtitulo</p>
         </>
     )

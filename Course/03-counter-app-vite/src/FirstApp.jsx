@@ -37,7 +37,7 @@ const getMessage = ( message ) =>{
 
 // if you want to show the title in your props, you only to write the component or object of props
 // and you have to create a default value in yopu type of prop
-export const FirstApp = ( {title, subTitle} ) => {
+export const FirstApp = ( {title, subTitle, name} ) => {
     // console.log(props)
     // if(!title){
     //     throw new Error('El titulo no existe')
@@ -49,6 +49,7 @@ export const FirstApp = ( {title, subTitle} ) => {
             {/* if you need to send or you need the object convert in this json.stringify */}
             {/* <code>{ JSON.stringify(newMessage) }</code> */}
             <p>{subTitle + 1}</p>
+            <p>{name}</p>
         </>
     )
 }
@@ -57,5 +58,12 @@ export const FirstApp = ( {title, subTitle} ) => {
 // you need to add PropTypes to refer what type you need
 FirstApp.propTypes = {
     title: PropTypes.string.isRequired,
-    subTitle: PropTypes.number,
+    subTitle: PropTypes.string,
+}
+
+// default prop types 
+FirstApp.defaultProps = {
+    title: 'None title',
+    subTitle: 'None subtitle',
+    name: 'Luffy',
 }

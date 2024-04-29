@@ -5,6 +5,9 @@ import { FirstApp } from './FirstApp';
 
 // import HelloWOrldApp from './HelloWorldApp'
 
+// import styles
+import './styles.css';
+
 
 // you nedd to add the name of your function to agregate in react en generate the object
 // ReactDOM.createRoot( document.getElementById('root')).render(

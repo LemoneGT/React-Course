@@ -1,4 +1,5 @@
 import { Fragment } from 'react';
+import PropTypes from 'prop-types';
 
 
 // use fragment to add two elementes or components in component
@@ -38,6 +39,9 @@ const getMessage = ( message ) =>{
 // and you have to create a default value in yopu type of prop
 export const FirstApp = ( {title, subTitle} ) => {
     // console.log(props)
+    // if(!title){
+    //     throw new Error('El titulo no existe')
+    // }
 
     return(
         <>
@@ -47,4 +51,11 @@ export const FirstApp = ( {title, subTitle} ) => {
             <p>{subTitle + 1}</p>
         </>
     )
+}
+
+
+// you need to add PropTypes to refer what type you need
+FirstApp.propTypes = {
+    title: PropTypes.string.isRequired,
+    subTitle: PropTypes.number,
 }

@@ -19,6 +19,8 @@ import './styles.css';
 
 ReactDOM.createRoot( document.getElementById('root') ).render(
     <React.StrictMode>
-        <FirstApp/>
+        {/* if you want to aggregate properties, you need to do this */}
+        {/* add {} to aggregate int in your properties */}
+        <FirstApp title="Hola soy un marciano" subTitle={123}/>
     </React.StrictMode>
 )

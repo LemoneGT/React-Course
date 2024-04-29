@@ -21,15 +21,30 @@ const getMessage = ( message ) =>{
     return message;
 }
 
-export const FirstApp = () => {
+// export const FirstApp = () => {
     
+
+//     return(
+//         <>
+//             <h1>{ getMessage('Esto se autodestruira') }</h1>
+//             {/* if you need to send or you need the object convert in this json.stringify */}
+//             {/* <code>{ JSON.stringify(newMessage) }</code> */}
+//             <p>Subtitulo</p>
+//         </>
+//     )
+// }
+
+// if you want to show the title in your props, you only to write the component or object of props
+// and you have to create a default value in yopu type of prop
+export const FirstApp = ( {title, subTitle} ) => {
+    // console.log(props)
 
     return(
         <>
-            <h1>{ getMessage('Esto se autodestruira') }</h1>
+            <h1>{ title }</h1>
             {/* if you need to send or you need the object convert in this json.stringify */}
             {/* <code>{ JSON.stringify(newMessage) }</code> */}
-            <p>Subtitulo</p>
+            <p>{subTitle + 1}</p>
         </>
     )
 }
